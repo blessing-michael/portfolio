@@ -3,20 +3,14 @@
 }
 
 body {
-  background-color: #fff;
-}
-
-.article-one {
-  display: flex;
-  flex-direction: column;
-  height: 70%;
-  padding: 0 1.5rem;
+  background-color: #e5e5e5;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   padding: 38px 25px;
+  background-color: #fff;
 }
 
 .my-logo {
@@ -30,13 +24,21 @@ body {
 }
 
 /* Beginning of section one(Headline) styling */
-.Headline {
+.headline {
   background-image: url(/images/header-shapes\ mobile.png);
   height: 600px;
   display: flex;
   align-items: center;
   border-bottom-left-radius: 5rem;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.article-one {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  padding: 0 1.5rem;
 }
 
 .intro {
@@ -66,3 +68,42 @@ body {
 /* .article-one */
 
 /* End of section one(Headline) styling */
+
+@media only screen and (min-width: 768px) {
+  /* Beginning of section one(Headline) styling */
+
+  .headline {
+    background-image: url(/images/header-shapes\ mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .article-one {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    padding: 0 6rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 55px;
+    background-color: #fff;
+  }
+
+  .intro-info {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+
+  .icons {
+    max-width: 40%;
+  }
+
+  .my-logo {
+    font-size: 19px;
+  }
+
+  /* End of section one(Headline) styling */
+}
