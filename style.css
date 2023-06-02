@@ -28,7 +28,7 @@ body {
 
 /* Beginning of section one(Headline) styling */
 .headline {
-  background-image: url(/images/header-shapes\ mobile.png);
+  background-image: url(./images/header-shapes\ mobile.png);
   height: 600px;
   display: flex;
   align-items: center;
@@ -67,9 +67,16 @@ body {
 }
 
 .social-icon {
-  width: 170px;
+  width: 100px;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  left: 0;
+}
+
+.social-icon li {
+  list-style-type: none;
+  margin-right: 1rem;
 }
 
 /* .article-one */
