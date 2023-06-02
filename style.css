@@ -17,6 +17,8 @@ body {
   font-size: 18px;
   text-transform: capitalize;
   color: #6070ff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .navbar {
