@@ -84,37 +84,113 @@ body {
 /* End of section one(Headline) styling */
 
 /* BEGINNING OF MIDDLE SECTION STYLING */
-.section-two{
-    background-color:  #FFFFFF;
-    margin: 5rem 1.5rem;
-    display: grid;
-    height: 600px;
-    border-radius: 15px;
-    justify-content: end;
-    
-    /* grid-template-columns: 300px 1fr ; */
-    /* background-color: #7f8cff; */
-    /* grid-template-columns: 100px 1fr; */
-    justify-content: center;
-    width: 330px;
-    align-item: center;
-    /* align-items: center; */
+
+.article-img {
+  max-width: 100%;
 }
-.article-1{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    margin: 2rem 0;
-    /* background-color: #7f8cff; */
+.section-two {
+  display: grid;
+  background-color: #ffffff;
+  max-width: 300px;
+  margin: 5rem 1.5rem;
+  height: 600px;
+  padding: 1rem;
+  border-radius: 15px;
 }
-.info-div1{
-    /* background-color: #6070ff; */
-    margin: 0.7rem 1.5rem;
-    /* width: ; */
+.article-1 {
+  display: flex;
+  flex-direction: column;
 }
-.title{
-    
+.info-div1 {
+  margin: 1rem 0;
+}
+.title {
+  color: #172b4d;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+  margin: 1rem 0;
+}
+.canopy {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+.info-p {
+  color: #344563;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.profession {
+  text-transform: capitalize;
+  color: #7a869a;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+.prof-span {
+  margin: 0 0.5rem;
+  color: #172b4d;
+}
+.tech-stack {
+  display: flex;
+  list-style-type: none;
+  margin: 1rem 0;
+  max-width: 200px;
+  justify-content: space-between;
+}
+/* ul li {
+  color: #6070ff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: #ebebff;
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 500px;
+} */
+/* ul li{
+    color: #6070ff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: #ebebff;
+    list-style-type: none;
+
+} */
+ul li{
+    list-style-type: none;
+    border-radius: 5px;
+    background: #ebebff;
+    height: 22px;
+    max-width: 75px;
+    color: #6070ff;
+    margin-right: 0.5rem ;
+    line-height: 16px;
+  font-size: 12px;
+  font-weight: 500px;
+  padding:0  0.2rem;
+}
+.project-btn {
+  color: #396df2;
+  background: transparent;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #6070ff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin: 5rem 0;
+}
+.ul {
+  position: absolute;
+  left: 0;
 }
 /* END OF MIDDLE SECTION STYLING */
 
