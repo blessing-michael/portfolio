@@ -166,16 +166,16 @@ body {
 
 .tech-stack li {
   list-style-type: none;
-  border-radius: 5px;
+  border-radius: 8px;
   background: #ebebff;
-  height: 22px;
   max-width: 75px;
   color: #6070ff;
   margin-right: 0.5rem;
   line-height: 16px;
   font-size: 12px;
   font-weight: 500px;
-  padding: 0 0.2rem;
+  padding: 4px 12px;
+  font-family: poppins, sans-serif;
 }
 
 .project-btn {
