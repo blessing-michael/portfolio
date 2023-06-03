@@ -238,39 +238,59 @@ body {
   text-transform: capitalize;
 }
 
-.about-li:first-child {
-  list-style-image: url("./images/Ellipse\ 1.png");
-  height: 50px;
-  max-width: 100%;
-  background: #f7f7f9;
-  margin: 1rem 0;
-  text-transform: capitalize;
+.tech-list {
+  /* background-color: #344563; */
+  position: absolute;
+  left: 0;
+  width: 80%;
+  font-family: Poppins, sans-serif;
+}
+
+.tech-list li:first-child {
+  list-style-type: none;
+  margin-bottom: 24px;
+  background-image: url("./images/Ellipse\ 1.png");
+  background-repeat: no-repeat;
+  padding-left: 68px;
+  padding-top: 35px;
+  background-color: #f7f7f9;
+  height: 66px;
+  background-position: 10px 20px;
+  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   color: #253858;
 }
 
-.about-li:first-child + li {
-  list-style-image: url("./images/Ellipse\ 1\ \(1\).png");
-  height: 50px;
-  max-width: 100%;
-  background: #f7f7f9;
-  margin: 1rem 0;
-  text-transform: capitalize;
+.tech-list li:first-child + li {
+  list-style-type: none;
+  margin-bottom: 24px;
+  background-image: url("./images/Ellipse\ 1\ \(1\).png");
+  background-repeat: no-repeat;
+  padding-left: 68px;
+  padding-top: 35px;
+  background-color: #f7f7f9;
+  height: 66px;
+  background-position: 10px 20px;
+  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   color: #253858;
 }
 
-.about-li:first-child + li + li {
-  list-style-image: url("./images/Ellipse\ 1\ \(2\).png");
-  height: 50px;
-  max-width: 100%;
-  background: #f7f7f9;
-  margin: 1rem 0;
-  text-transform: capitalize;
+.tech-list li:first-child + li + li {
+  list-style-type: none;
+  margin-bottom: 24px;
+  background-image: url("./images/Ellipse\ 1\ \(2\).png");
+  background-repeat: no-repeat;
+  padding-left: 68px;
+  padding-top: 35px;
+  background-color: #f7f7f9;
+  height: 66px;
+  background-position: 10px 20px;
+  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -278,7 +298,7 @@ body {
 }
 
 .stack {
-  height: 300px;
+  height: 350px;
   margin-top: 4rem;
 }
 
@@ -312,7 +332,7 @@ body {
 }
 
 .skills {
-  margin: 3rem 0;
+  margin: 11rem 4rem 0 0;
 }
 
 /* END OF ABOUT SECTION STYLING */
