@@ -87,24 +87,27 @@ body {
 /* End of section one(Headline) styling */
 
 /* BEGINNING OF MIDDLE SECTION STYLING */
+.works-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.article-1 {
+  display: flex;
+  flex-direction: column;
+}
 
 .article-img {
   max-width: 100%;
 }
 
 .section-two {
-  display: grid;
   background-color: #fff;
   max-width: 300px;
   margin: 5rem 1.5rem;
   height: 600px;
   padding: 1rem;
   border-radius: 15px;
-}
-
-.article-1 {
-  display: flex;
-  flex-direction: column;
 }
 
 .info-div1 {
@@ -197,9 +200,10 @@ body {
   left: 0;
 }
 
-/* END OF MIDDLE SECTION STYLING */
+/* END OF MIDDLE SECTION(work) STYLING */
 
 /* BEGINNING OF ABOUT SECTION STYLING */
+
 .about-myself {
   background-color: #fff;
   padding: 5rem 2rem;
@@ -380,7 +384,7 @@ body {
 
   /* BEGINNING OF ABOUT SECTION STYLING */
 
-  .meee {
+  .works-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
