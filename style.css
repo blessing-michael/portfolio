@@ -244,7 +244,6 @@ body {
 }
 
 .tech-list {
-  /* background-color: #344563; */
   position: absolute;
   left: 0;
   width: 80%;
@@ -391,7 +390,7 @@ body {
   }
 
   .skills {
-    margin: 8rem 0;
+    margin: 15rem 0;
   }
 
   /* END OF ABOUT SECTION STYLING */
