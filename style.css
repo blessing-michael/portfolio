@@ -356,11 +356,16 @@ body {
   .btn-container {
     margin: 7rem;
   }
+  /* BEGINNING OF ABOUT SECTION STYLING */
+  .meee {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .skills {
+    margin: 8rem 0;
+  }
 
-  /* .resume-btn{
-    margin: 7rem 0;
-
-  } */
+  /* END OF ABOUT SECTION STYLING */
 
   /* End of section one(Headline) styling */
 }
