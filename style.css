@@ -353,7 +353,8 @@ body {
   padding: 7rem 2rem 2rem 2rem;
   font-family: poppins, sans-serif;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: 100% 100%;
 }
 
 .contact {
