@@ -129,7 +129,7 @@ I would like to thank Eric for his contributions
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](.[/LICENSE](https://github.com/blessing-michael/portfolio/blob/blessing-michael-patch-1/LICENSE)) licensed.
+This project is [MIT](https://github.com/blessing-michael/portfolio/blob/blessing-michael-patch-1/LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
