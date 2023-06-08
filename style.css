@@ -549,5 +549,68 @@ input::placeholder {
   /* beginning of Styling for about session */
   .about-article {
     display: flex;
+    position: relative;
+  }
+
+  .about-myself {
+    padding: 7rem 5rem;
+    height: 400px;
+  }
+
+  .article1 {
+    width: 900px;
+    height: 400px;
+  }
+
+  .tech-list {
+    position: absolute;
+    left: 44%;
+    width: 10%;
+    top: 20%;
+    font-family: Poppins, sans-serif;
+    display: flex;
+  }
+
+  .tech-list li {
+    margin-left: 1rem;
+    padding: 0 1rem;
+  }
+
+  .languge-div {
+    position: absolute;
+    left: 51%;
+    width: 20%;
+    top: 0%;
+  }
+
+  .framework {
+    margin-top: 2rem;
+  }
+
+  .skills {
+    margin-left: 4rem;
+  }
+
+  .social-icon {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: -5%;
+    height: 100px;
+  }
+
+  /* Beginning of contact styling */
+  .contact-p {
+    width: 400px;
+  }
+
+  .contact-btn {
+    text-align: center;
+  }
+
+  .contact-btncontainer {
+    display: flex;
+    justify-content: center;
   }
 }
