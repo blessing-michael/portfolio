@@ -423,6 +423,10 @@ input::placeholder {
   max-width: 142px;
 }
 
+.nav-info {
+  display: none;
+}
+
 /* End of contact section */
 
 @media only screen and (min-width: 768px) {
@@ -601,6 +605,22 @@ input::placeholder {
   }
 
   /* Beginning of contact styling */
+  .form-section {
+    background-color: #6070ff;
+    background-image: url(./images/contact\ form\ background\ shapes@2x.png);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5rem;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 7rem 2rem 2rem 2rem;
+    font-family: poppins, sans-serif;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+  }
+
   .contact-p {
     width: 400px;
   }
@@ -612,5 +632,37 @@ input::placeholder {
   .contact-btncontainer {
     display: flex;
     justify-content: center;
+  }
+
+  .article-one {
+    height: 50%;
+    padding: 0 15rem;
+  }
+
+  .social-icon-1 {
+    left: 19%;
+  }
+
+  .bar-div {
+    display: none;
+  }
+
+  .nav-info {
+    display: flex;
+    color: #344563;
+    font-family: Poppins, sans-serif;
+    margin-right: 1rem;
+  }
+
+  .nav-info li {
+    list-style-type: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+    line-height: 20px;
+    text-transform: capitalize;
+  }
+
+  .nav-info li a {
+    font-weight: 500px;
   }
 }
