@@ -19,6 +19,7 @@ body {
   color: #6070ff;
   text-decoration: none;
   font-weight: bold;
+
 }
 
 .navbar-icon {
@@ -337,6 +338,19 @@ body {
   margin: 11rem 4rem 0 0;
   width: 100%;
 }
+.languge-div {
+  /* position: absolute; */
+  /* left: 51%; */
+  /* width: 20%; */
+  /* top: -10%; */
+}
+.about-2{
+  background-color: #253858;
+  margin-top: 0;
+   position: absolute; 
+  left: 51%; 
+   top: -30%; 
+}
 
 /* END OF ABOUT SECTION STYLING */
 
@@ -524,6 +538,11 @@ input::placeholder {
 
   .article-img {
     height: 330px;
+    margin-top: -1rem;
+  }
+
+  .article-img-2 {
+    margin-top: 0rem;
   }
 
   .tech-stack {
@@ -532,6 +551,7 @@ input::placeholder {
 
   .info-div1 {
     margin-left: 2rem;
+    margin-top: -1rem;
     grid-column: 2;
     grid-row: 1;
   }
@@ -664,5 +684,65 @@ input::placeholder {
 
   .nav-info li a {
     font-weight: 500px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .headline {
+    background-image: url(./images/Header\ bg@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+
+  /* beginning of Styling for work section */
+
+  .tech-stack {
+    margin-left: 39rem;
+  }
+
+  .tech-stack-two {
+    margin-left: 9.2rem;
+  }
+
+  .social-icon-1 {
+    left: 16%;
+  }
+  .section-two {
+    max-width: 1200px;
+  }
+
+  .article-img {
+    height: 330px;
+    margin-top: -1.5rem;
+  }
+
+  .article-img-2 {
+    margin-top: -0.7rem;
+  }
+
+  /* beginning of Styling for About section */
+  .social-icon {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: -3.5%;
+    height: 100px;
+  }
+  .social-icon-1 {
+    left: 15.7%;
+  }
+
+  .languge-div {
+    left: 45%;
+  }
+  .tech-list {
+    position: absolute;
+    left: 40%;
+    width: 10%;
+    top: 20%;
+    font-family: Poppins, sans-serif;
+    display: flex;
   }
 }
