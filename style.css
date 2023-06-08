@@ -23,6 +23,16 @@ body {
   animation-name: rotate;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .navbar-icon {
   color: #6070ff;
   font-size: 1.3rem;
