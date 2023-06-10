@@ -194,8 +194,95 @@ body {
 }
 
 .ul {
-  position: absolute;
   left: 0;
+}
+
+.work-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 90%;
+  padding: 1rem;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.work-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 2rem;
+}
+
+.work-title {
+  color: #172b4d;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-family: poppins, sans-serif;
+  margin: 1rem 0;
+}
+
+.works-details {
+  display: flex;
+}
+
+.work-canopy {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  font-family: poppins, sans-serif;
+}
+
+.work-info {
+  color: #344563;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: poppins, sans-serif;
+  margin: 1rem 0;
+}
+
+.tech-highligt {
+  display: flex;
+}
+
+.tech-highligt p {
+  list-style-type: none;
+  border-radius: 8px;
+  background: #ebebff;
+  max-width: 50px;
+  color: #6070ff;
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 500px;
+  padding: 4px 12px;
+  text-align: center;
+  font-family: poppins, sans-serif;
+  display: flex;
+  margin: 0.5rem 0;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-project-btn {
+  color: #396df2;
+  background: transparent;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #6070ff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin: 1rem 0;
+  font-family: poppins, sans-serif;
 }
 
 /* END OF MIDDLE SECTION(work) STYLING */
@@ -605,6 +692,7 @@ input::placeholder {
     border-radius: 15px;
     display: flex;
     flex-grow: 3;
+    position: relative;
   }
 
   .works-section {
@@ -623,8 +711,25 @@ input::placeholder {
     grid-template-columns: 1fr 1fr;
   }
 
-  .tech-stack {
-    margin-left: 21.5rem;
+  /* work-section */
+  .work {
+    flex-direction: row;
+    height: 330px;
+  }
+
+  .work-img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 100%;
+  }
+
+  .works-info {
+    margin-left: 2rem;
+    width: 60%;
+  }
+
+  .work-two {
+    flex-direction: row-reverse;
   }
 
   /* BEGINNING OF ABOUT SECTION STYLING */
