@@ -262,7 +262,6 @@ body {
   font-weight: 500px;
   padding: 4px 12px;
   text-align: center;
-  font-family: poppins, sans-serif;
   display: flex;
   margin: 0.5rem 0;
   margin-right: 0.5rem;
@@ -280,7 +279,6 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   margin: 1rem 0;
-  font-family: poppins, sans-serif;
 }
 
 /* END OF MIDDLE SECTION(work) STYLING */
