@@ -105,7 +105,6 @@ body {
   margin: 5rem 1.5rem;
   height: 600px;
   padding: 1rem;
-  border-radius: 15px;
 }
 
 .info-div1 {
@@ -277,28 +276,61 @@ body {
   margin: 1rem 0;
   transition: all 0.3s ease-out;
 }
+
 .tech-project-btn:hover {
   background: #6070ff;
-  color: #ffffff;
+  color: #fff;
 }
+
 .tech-project-btn:disabled {
   background: #e5e5e5;
   color: #e5e5e5;
   border: 1px solid #e5e5e5;
 }
+
+.contact-btn {
+  margin: 1rem 0;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  max-width: 142px;
+  transition: all 0.3s ease-out;
+}
+
 .contact-btn:hover {
   background: #6070ff;
-  color: #ffffff;
+  color: #fff;
 }
+
 .contact-btn:disabled {
   background: #e5e5e5;
   color: #e5e5e5;
   border: 1px solid #e5e5e5;
 }
+
+.button {
+  text-decoration: none;
+  color: #396df2;
+  border: 1px solid #7f8cff;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  transition: all 0.3s ease-out;
+}
+
 .button:hover {
   background: #6070ff;
-  color: #ffffff;
+  color: #fff;
 }
+
 .button:disabled {
   background: #e5e5e5;
   color: #e5e5e5;
@@ -525,18 +557,6 @@ body {
   font-family: poppins, sans-serif;
 }
 
-.button {
-  text-decoration: none;
-  color: #396df2;
-  border: 1px solid #7f8cff;
-  padding: 0.7rem 1rem;
-  border-radius: 5px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  transition: all 0.3s ease-out;
-}
-
 .frame-name {
   font-style: normal;
   font-size: 20px;
@@ -619,21 +639,6 @@ input::placeholder {
 
 .skill-lang {
   display: none;
-}
-
-.contact-btn {
-  margin: 1rem 0;
-  padding: 0.7rem 1rem;
-  border-radius: 10px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  border: none;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  max-width: 142px;
-  transition: all 0.3s ease-out;
 }
 
 .nav-info {
