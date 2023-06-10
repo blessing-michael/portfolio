@@ -275,6 +275,34 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   margin: 1rem 0;
+  transition: all 0.3s ease-out;
+}
+.tech-project-btn:hover {
+  background: #6070ff;
+  color: #ffffff;
+}
+.tech-project-btn:disabled {
+  background: #e5e5e5;
+  color: #e5e5e5;
+  border: 1px solid #e5e5e5;
+}
+.contact-btn:hover {
+  background: #6070ff;
+  color: #ffffff;
+}
+.contact-btn:disabled {
+  background: #e5e5e5;
+  color: #e5e5e5;
+  border: 1px solid #e5e5e5;
+}
+.button:hover {
+  background: #6070ff;
+  color: #ffffff;
+}
+.button:disabled {
+  background: #e5e5e5;
+  color: #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
 
 /* END OF MIDDLE SECTION(work) STYLING */
@@ -506,6 +534,7 @@ body {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+  transition: all 0.3s ease-out;
 }
 
 .frame-name {
@@ -604,6 +633,7 @@ input::placeholder {
   font-size: 17px;
   line-height: 24px;
   max-width: 142px;
+  transition: all 0.3s ease-out;
 }
 
 .nav-info {
@@ -706,7 +736,8 @@ input::placeholder {
   /* work-section */
   .work {
     flex-direction: row;
-    height: 330px;
+    height: 350px;
+    width: 80%;
   }
 
   .work-img {
@@ -717,7 +748,8 @@ input::placeholder {
 
   .works-info {
     margin-left: 2rem;
-    width: 60%;
+    margin-right: 2rem;
+    width: 50%;
   }
 
   .work-two {
