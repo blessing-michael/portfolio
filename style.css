@@ -877,6 +877,8 @@ input::placeholder {
 
   .nav-info li a {
     font-weight: 500px;
+    color: #344563;
+    text-decoration: none;
   }
 
   .frame-list {
