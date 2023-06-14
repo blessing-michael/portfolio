@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,9 +28,9 @@
             <i class="fa-solid fa-bars navbar-icon"></i>
           </div>
           <ul class="nav-info">
-            <li><a href="#"></a>portfolio</li>
-            <li><a href="#"></a>about</li>
-            <li><a href="#"></a>contact</li>
+            <li><a href="#work">portfolio</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
       </header>
@@ -53,27 +53,27 @@
               <ul class="social-icon">
                 <li>
                   <a href="https://twitter.com/toonmystory"
-                    ><img src="./images/twitter.svg" alt="" class="icon-img"
+                    ><img src="./images/twitter.svg" alt="twitter" class="icon-img"
                   /></a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com/in/blessing-asuquo-4509981a2/"
-                    ><img src="./images/linkedin.png" alt="" class="icon-img"
+                    ><img src="./images/linkedin.png" alt="linkedin" class="icon-img"
                   /></a>
                 </li>
                 <li>
                   <a href="https://medium.com/@blessingmike334"
-                    ><img src="./images/medium.svg" alt="" class="icon-img"
+                    ><img src="./images/medium.svg" alt="medium" class="icon-img"
                   /></a>
                 </li>
                 <li>
                   <a href="https://github.com/blessing-michael"
-                    ><img src="./images/github.svg" alt="" class="icon-img"
+                    ><img src="./images/github.svg" alt="github" class="icon-img"
                   /></a>
                 </li>
                 <li>
                   <a href="https://github.com/blessing-michael"
-                    ><img src="./images/Vector (3).svg" alt="" class="icon-img"
+                    ><img src="./images/Vector (3).svg" alt="angelist" class="icon-img"
                   /></a>
                 </li>
               </ul>
@@ -81,7 +81,7 @@
           </article>
         </section>
   
-        <section class="work-wrap">
+        <section class="work-wrap" id="work">
           <section class="work">
             <div class="img">
               <img src="./images/work-1.png" alt="work image" class="work-img" />
@@ -156,7 +156,7 @@
   
           <section class="work">
             <div class="img">
-              <img src="./images/work-3.png" alt="" class="work-img" />
+              <img src="./images/work-3.png" alt="work-image" class="work-img" />
             </div>
   
             <div class="works-info">
@@ -226,7 +226,7 @@
           </section>
         </section>
   
-        <section class="about-section">
+        <section class="about-section" id="about">
           <div class="about-wrap">
             <div class="first-desc">
               <h1>about myself</h1>
@@ -325,7 +325,7 @@
           </div>
         </section>
   
-        <section class="form-section">
+        <section class="form-section" id="contact">
           <div class="contact-title">
             <h1 class="contact">Contact me</h1>
             <p class="contact-p">
@@ -339,6 +339,7 @@
             method="POST"
             class="form"
           >
+          <label for="name" hidden="hidden">name</label>
             <input
               type="text"
               placeholder="Lorem Ipsum"
@@ -347,6 +348,7 @@
               name="name"
               required
             />
+            <label for="email" hidden="hidden">email</label>
             <input
               type="email"
               name="email"
@@ -355,6 +357,7 @@
               required
               name="email"
             />
+            <label for="message" hidden="hidden">message</label>
             <textarea
               name="message"
               id="message"
@@ -371,6 +374,5 @@
           </form>
         </section>
       </main>
-    
 </body>
 </html>
