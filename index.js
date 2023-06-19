@@ -1,9 +1,21 @@
 const Navicon = document.querySelector('.bar-div');
-const links = document.querySelector('.nav-info');
 const linksContainer = document.querySelector('.links-container');
-const linksblur = document.querySelector('.blur');
+const closeIcon = document.querySelector('.close-icon');
+const allNavlinks = document.querySelectorAll('.nav-info');
+
 Navicon.addEventListener('click', () => {
-    console.log('clicked');
-    links.classList.toggle('active')
-        // linksContainer.classList.add('.blurry')
+  linksContainer.classList.add('active');
+});
+
+function closeMenu() {
+  linksContainer.classList.remove('active');
+}
+closeIcon.addEventListener('click', () => {
+  closeMenu();
+});
+
+allNavlinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    closeMenu();
+  });
 });
