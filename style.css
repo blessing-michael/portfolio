@@ -654,7 +654,34 @@ input::placeholder {
 }
 
 .nav-info {
-  display: none;
+  position: fixed;
+  left: -100%;
+  color: #ffffff;
+  background-color: #6072ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(8px);
+  padding: 7rem 3rem;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-transform: capitalize;
+  font-family: poppins, sans-serif;
+}
+
+.nav-info.active {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+}
+.nav-info li {
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+}
+.nav-info li a {
+  color: beige;
+  text-decoration: none;
 }
 
 /* End of contact section */
