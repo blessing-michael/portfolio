@@ -55,11 +55,11 @@ const closeIcon = document.querySelector('.close-icon');
 const allNavlinks = document.querySelectorAll('.nav-info');
 const workSection = document.querySelectorAll('.work-wrap');
 const popContainer = document.querySelector('.popup-Container');
-console.log(popContainer)
+// console.log(popContainer)
 const workp = document.getElementById('p');
 const worksec = document.getElementById('work');
 
-window.addEventListener('DOMContentLoaded', () => {
+function generateWork() {
   // console.log('work')
   let displayWork = details.map((work) => `  <article class="work">
       <div class="img">
@@ -90,29 +90,10 @@ window.addEventListener('DOMContentLoaded', () => {
     </article>`);
   displayWork = displayWork.join('');
   worksec.innerHTML = displayWork;
-  console.log(displayWork);
+//   console.log(displayWork);
 
-  const seeProject = document.querySelectorAll('.tech-project-btn');
-
-  seeProject.forEach((button) => {
-    console.log('button');
-    button.addEventListener('click', (e) => {
-      console.log('clicked me', e.target.classList);
-      if (e.target.classList.contains('tech-project-btn')) {
-        popContainer.style.display = 'block';
-        // const id = parseFloat(e.target.id);
-        // const search = details.find((x) => x.id === id);
-        // console.log(id,'id');
-
-       
-      }
-    });
-  });
-
-  // seeProject.addEventListener('click', ()=>{
-  //     console.log('click see project')
-  // })
-});
+}
+generateWork()
 
 Navicon.addEventListener('click', () => {
   linksContainer.classList.add('active');
