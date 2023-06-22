@@ -594,7 +594,7 @@ body {
 .form-section {
   background-color: #6070ff;
   background-image: url(./images/contact-form.png);
-  height: 600px;
+  height: 700px;
   display: flex;
   align-items: center;
   border-top-left-radius: 5rem;
@@ -605,6 +605,10 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 100% 100%;
+}
+
+.error-message {
+  color: rgb(105, 29, 29);
 }
 
 .contact {

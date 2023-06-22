@@ -60,6 +60,9 @@ const closeIcon = document.querySelector('.close-icon');
 const allNavlinks = document.querySelectorAll('.nav-info');
 const popContainer = document.querySelector('.popup-Container');
 const worksec = document.getElementById('work');
+const error = document.querySelector('.error-message');
+const form = document.querySelector('.form');
+const email = document.querySelector('#email');
 
 function generateWork() {
   let displayWork = details.map((work) => `  <article class="work">
@@ -171,4 +174,25 @@ allNavlinks.forEach((link) => {
   link.addEventListener('click', () => {
     closeMenu();
   });
+});
+
+// FORM VALIDATE
+
+function errorMessage() {
+  if (email.value !== email.value.toLowerCase()) {
+    error.textContent = 'Please ensure that email address must be in lower case';
+  }
+}
+
+email.addEventListener('input', () => {
+  if (email.value === email.value.toLowerCase()) {
+    error.textContent = '';
+  }
+});
+
+form.addEventListener('submit', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    errorMessage();
+  }
 });
