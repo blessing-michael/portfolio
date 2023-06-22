@@ -172,3 +172,24 @@ allNavlinks.forEach((link) => {
     closeMenu();
   });
 });
+
+// FORM VALIDATE
+
+const errorMessage = () => {
+    if (email.value !== email.value.toLowerCase()) {
+      error.textContent = 'Please ensure that email address must be in lower case';
+    }
+  };
+  
+  email.addEventListener('input', () => {
+    if (email.value === email.value.toLowerCase()) {
+      error.textContent = '';
+    }
+  });
+  
+  form.addEventListener('submit', (event) => {
+    if (email.value !== email.value.toLowerCase()) {
+      event.preventDefault();
+      errorMessage();
+    }
+  });
