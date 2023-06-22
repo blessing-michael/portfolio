@@ -693,6 +693,10 @@ input::placeholder {
   display: block;
 }
 
+.error-message {
+  color: rgb(154, 20, 20);
+}
+
 /* End of contact section */
 
 @media only screen and (min-width: 768px) {

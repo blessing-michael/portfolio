@@ -2,34 +2,44 @@ const Navicon = document.querySelector('.bar-div');
 const linksContainer = document.querySelector('.links-container');
 const closeIcon = document.querySelector('.close-icon');
 const allNavlinks = document.querySelectorAll('.nav-info');
+const error = document.querySelector('.error-message');
+const form = document.querySelector('.form');
+const email = document.querySelector('#email');
 
 Navicon.addEventListener('click', () => {
-    linksContainer.classList.add('active');
+  linksContainer.classList.add('active');
 });
 
 function closeMenu() {
-    linksContainer.classList.remove('active');
+  linksContainer.classList.remove('active');
 }
 closeIcon.addEventListener('click', () => {
-    closeMenu();
+  closeMenu();
 });
 
 allNavlinks.forEach((link) => {
-    link.addEventListener('click', () => {
-        closeMenu();
-    });
+  link.addEventListener('click', () => {
+    closeMenu();
+  });
 });
-const btn = document.getElementById('submit-btn');
 
-btn.addEventListener('click', (event) => {
-            // reject submission of form
-            event.preventDefault();
+// FORM VALIDATE
 
-            function showMessage(input, message, type) {
-                const msg = input.parentNode.querySelector('small');
-                msg.innerHTML = message;
+const errorMessage = () => {
+  if (email.value !== email.value.toLowerCase()) {
+    error.textContent = 'Please ensure that email address must be in lower case';
+  }
+};
 
-                // update input class
-                input.className = type ? 'success' : 'error';
-                return type;
-            }
+email.addEventListener('input', () => {
+  if (email.value === email.value.toLowerCase()) {
+    error.textContent = '';
+  }
+});
+
+form.addEventListener('submit', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    errorMessage();
+  }
+});
