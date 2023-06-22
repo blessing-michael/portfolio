@@ -19,3 +19,11 @@ allNavlinks.forEach((link) => {
     closeMenu();
   });
 });
+function storeData() {
+    // store user input in object
+    const userData = {
+      name: nameInput.value,
+      email: emailInput.value,
+      message: msgInput.value,
+  
+    };
