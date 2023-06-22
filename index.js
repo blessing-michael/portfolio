@@ -136,7 +136,7 @@ seeProject.forEach((button) => {
             <a href=${search.livelink} class="see-live"
             ><img src="./images/Enabled1.png" alt="see live" class= "pop-enabled"
           /></a>
-            <a href=${search.livelink} class="see-live"
+            <a href=${search.linkSource} class="see-live"
              ><img src="./images/Enabled.png" class= "pop-enabled" alt="see live"
           /></a>
                 
