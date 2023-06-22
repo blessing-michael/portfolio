@@ -178,11 +178,11 @@ allNavlinks.forEach((link) => {
 
 // FORM VALIDATE
 
-function errorMessage(){
+function errorMessage() {
   if (email.value !== email.value.toLowerCase()) {
     error.textContent = 'Please ensure that email address must be in lower case';
   }
-};
+}
 
 email.addEventListener('input', () => {
   if (email.value === email.value.toLowerCase()) {
