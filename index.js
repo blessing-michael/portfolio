@@ -6,7 +6,7 @@ const details = [
     stack: 'Back End Dev',
     price: 2015,
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    longdescription:`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
+    longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     img: './images/work-1.png',
     technology: ['HTML', 'CSS', 'Javascript'],
     livelink: 'https://blessing-michael.github.io/portfolio/',
@@ -19,7 +19,7 @@ const details = [
     stack: 'Back End Dev',
     price: 2015,
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    longdescription:`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry,`,
+    longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry,',
     img: './images/work-2.png',
     technology: ['HTML', 'CSS', 'Javascript'],
     livelink: 'https://blessing-michael.github.io/portfolio/',
@@ -32,7 +32,7 @@ const details = [
     stack: 'Back End Dev',
     price: 2015,
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    longdescription:`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
+    longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     img: './images/work-3.png',
     technology: ['HTML', 'CSS', 'Javascript'],
     livelink: 'https://blessing-michael.github.io/portfolio/',
@@ -40,15 +40,15 @@ const details = [
   },
   {
     id: 4,
-    title: 'Multi-Post Stories', 
+    title: 'Multi-Post Stories',
     platform: 'CANOPY',
     stack: 'Back End Dev',
     price: 2015,
     img: './images/work4.png',
     featuredimg: '/images/work4.png',
-    
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 
-    longdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.`, 
+
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     technology: ['HTML', 'CSS', 'Javascript'],
     livelink: 'https://blessing-michael.github.io/portfolio/',
     linkSource: 'https://github.com/blessing-michael/portfolio',
@@ -59,14 +59,10 @@ const Navicon = document.querySelector('.bar-div');
 const linksContainer = document.querySelector('.links-container');
 const closeIcon = document.querySelector('.close-icon');
 const allNavlinks = document.querySelectorAll('.nav-info');
-const workSection = document.querySelectorAll('.work-wrap');
 const popContainer = document.querySelector('.popup-Container');
-console.log(popContainer)
-const workp = document.getElementById('p');
 const worksec = document.getElementById('work');
 
 function generateWork() {
-  // console.log('work')
   let displayWork = details.map((work) => `  <article class="work">
       <div class="img">
         <img src=${work.img} alt=${work.title} class="work-img" />
@@ -96,28 +92,19 @@ function generateWork() {
     </article>`);
   displayWork = displayWork.join('');
   worksec.innerHTML = displayWork;
-//   console.log(displayWork);
-
 }
-generateWork()
+generateWork();
 
 const seeProject = document.querySelectorAll('.tech-project-btn');
-console.log(seeProject)
-seeProject.forEach((button)=>{
-    button.addEventListener('click', (e)=>{
-        console.log(button)
-        if(e.target.classList.contains('tech-project-btn')){
-            popContainer.style.display = 'block';
-            // popContainer.classList.add('popup-Container')
-            const id = parseFloat(e.target.id);
-    const search = details.find((x) => x.id === id);
-    console.log(id)
-    console.log(search)
+seeProject.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    if (e.target.classList.contains('tech-project-btn')) {
+      popContainer.style.display = 'block';
+      const id = parseFloat(e.target.id);
+      const search = details.find((x) => x.id === id);
 
-    if(search){
-        console.log(search.img)
-        console.log(search.title)
-        popContainer.innerHTML= `<div class="pop-up">
+      if (search) {
+        popContainer.innerHTML = `<div class="pop-up">
         <div class="popup-info">
         <i class="fa-solid fa-xmark pop-close"></i>
           <h5 class="popup-h5">${search.title}</h5>
@@ -160,19 +147,15 @@ seeProject.forEach((button)=>{
         </div>
       </div>
       
-`
+`;
+      }
+      const popClose = document.querySelector('.pop-close');
+      popClose.addEventListener('click', () => {
+        popContainer.style.display = 'none';
+      });
     }
-    const popClose= document.querySelector('.pop-close')
-console.log(popClose)
-popClose.addEventListener('click', ()=>{
-    popContainer.style.display = 'none';
-
-})
-        }
-     
-    })
-    
-})
+  });
+});
 
 Navicon.addEventListener('click', () => {
   linksContainer.classList.add('active');

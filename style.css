@@ -728,7 +728,6 @@ input::placeholder {
   font-size: 30px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
   text-align: left;
   color: #091e42;
 }
@@ -783,6 +782,7 @@ input::placeholder {
 .platform {
   color: #344563;
 }
+
 .pop-counter {
   text-transform: capitalize;
   color: #7a869a;
@@ -818,16 +818,18 @@ input::placeholder {
     height: 90vh;
     border-radius: 10px;
   }
+
   .platform {
     color: #344563;
   }
-  
+
   .pop-counter {
     text-transform: capitalize;
     color: #7a869a;
     font-weight: 600;
     font-size: 15px;
   }
+
   .pop-close {
     float: right;
     color: #67798e;
@@ -839,7 +841,7 @@ input::placeholder {
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     color: #091e42;
     margin: 1rem;
@@ -883,12 +885,13 @@ input::placeholder {
     font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
     line-height: 16px;
   }
+
   .popup-btn {
     margin-top: 1rem;
   }
+
   .liveview-btn {
     padding: 0.5rem 0.5rem;
     color: #396df2;
