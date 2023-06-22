@@ -1,57 +1,57 @@
 const details = [{
-  id: 1,
-  title: 'Tonic',
-  platform: 'CANOPY',
-  stack: 'Back End Dev',
-  price: 2015,
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  img: './images/work-1.png',
-  technology: ['HTML', 'CSS', 'Javascript'],
-  livelink: 'https://blessing-michael.github.io/portfolio/',
-  linkSource: 'https://github.com/blessing-michael/portfolio',
-},
-{
-  id: 2,
-  title: 'Multi-Post Stories',
-  platform: 'CANOPY',
-  stack: 'Back End Dev',
-  price: 2015,
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry,',
-  img: './images/work-2.png',
-  technology: ['HTML', 'CSS', 'Javascript'],
-  livelink: 'https://blessing-michael.github.io/portfolio/',
-  linkSource: 'https://github.com/blessing-michael/portfolio',
-},
-{
-  id: 3,
-  title: 'Tonic',
-  platform: 'CANOPY',
-  stack: 'Back End Dev',
-  price: 2015,
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  img: './images/work-3.png',
-  technology: ['HTML', 'CSS', 'Javascript'],
-  livelink: 'https://blessing-michael.github.io/portfolio/',
-  linkSource: 'https://github.com/blessing-michael/portfolio',
-},
-{
-  id: 4,
-  title: 'Multi-Post Stories',
-  platform: 'CANOPY',
-  stack: 'Back End Dev',
-  price: 2015,
-  img: './images/work4.png',
-  featuredimg: '/images/work4.png',
+        id: 1,
+        title: 'Tonic',
+        platform: 'CANOPY',
+        stack: 'Back End Dev',
+        price: 2015,
+        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        img: './images/work-1.png',
+        technology: ['HTML', 'CSS', 'Javascript'],
+        livelink: 'https://blessing-michael.github.io/portfolio/',
+        linkSource: 'https://github.com/blessing-michael/portfolio',
+    },
+    {
+        id: 2,
+        title: 'Multi-Post Stories',
+        platform: 'CANOPY',
+        stack: 'Back End Dev',
+        price: 2015,
+        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry,',
+        img: './images/work-2.png',
+        technology: ['HTML', 'CSS', 'Javascript'],
+        livelink: 'https://blessing-michael.github.io/portfolio/',
+        linkSource: 'https://github.com/blessing-michael/portfolio',
+    },
+    {
+        id: 3,
+        title: 'Tonic',
+        platform: 'CANOPY',
+        stack: 'Back End Dev',
+        price: 2015,
+        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        img: './images/work-3.png',
+        technology: ['HTML', 'CSS', 'Javascript'],
+        livelink: 'https://blessing-michael.github.io/portfolio/',
+        linkSource: 'https://github.com/blessing-michael/portfolio',
+    },
+    {
+        id: 4,
+        title: 'Multi-Post Stories',
+        platform: 'CANOPY',
+        stack: 'Back End Dev',
+        price: 2015,
+        img: './images/work4.png',
+        featuredimg: '/images/work4.png',
 
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  technology: ['HTML', 'CSS', 'Javascript'],
-  livelink: 'https://blessing-michael.github.io/portfolio/',
-  linkSource: 'https://github.com/blessing-michael/portfolio',
-},
+        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        technology: ['HTML', 'CSS', 'Javascript'],
+        livelink: 'https://blessing-michael.github.io/portfolio/',
+        linkSource: 'https://github.com/blessing-michael/portfolio',
+    },
 ];
 
 const Navicon = document.querySelector('.bar-div');
@@ -60,9 +60,12 @@ const closeIcon = document.querySelector('.close-icon');
 const allNavlinks = document.querySelectorAll('.nav-info');
 const popContainer = document.querySelector('.popup-Container');
 const worksec = document.getElementById('work');
+const error = document.querySelector('.error-message');
+const form = document.querySelector('.form');
+const email = document.querySelector('#email');
 
 function generateWork() {
-  let displayWork = details.map((work) => `  <article class="work">
+    let displayWork = details.map((work) => `  <article class="work">
       <div class="img">
         <img src=${work.img} alt=${work.title} class="work-img" />
       </div>
@@ -89,21 +92,21 @@ function generateWork() {
         <button class="tech-project-btn" type="submit" id=${work.id}>See project</button>
       </div>
     </article>`);
-  displayWork = displayWork.join('');
-  worksec.innerHTML = displayWork;
+    displayWork = displayWork.join('');
+    worksec.innerHTML = displayWork;
 }
 generateWork();
 
 const seeProject = document.querySelectorAll('.tech-project-btn');
 seeProject.forEach((button) => {
-  button.addEventListener('click', (e) => {
-    if (e.target.classList.contains('tech-project-btn')) {
-      popContainer.style.display = 'block';
-      const id = parseFloat(e.target.id);
-      const search = details.find((x) => x.id === id);
+            button.addEventListener('click', (e) => {
+                        if (e.target.classList.contains('tech-project-btn')) {
+                            popContainer.style.display = 'block';
+                            const id = parseFloat(e.target.id);
+                            const search = details.find((x) => x.id === id);
 
-      if (search) {
-        popContainer.innerHTML = `<div class="pop-up">
+                            if (search) {
+                                popContainer.innerHTML = `<div class="pop-up">
         <div class="popup-info">
         <i class="fa-solid fa-xmark pop-close"></i>
           <h5 class="popup-h5">${search.title}</h5>
