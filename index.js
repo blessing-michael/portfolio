@@ -4,26 +4,34 @@ const closeIcon = document.querySelector('.close-icon');
 const allNavlinks = document.querySelectorAll('.nav-info');
 
 Navicon.addEventListener('click', () => {
-  linksContainer.classList.add('active');
+    linksContainer.classList.add('active');
 });
 
 function closeMenu() {
-  linksContainer.classList.remove('active');
+    linksContainer.classList.remove('active');
 }
 closeIcon.addEventListener('click', () => {
-  closeMenu();
+    closeMenu();
 });
 
 allNavlinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    closeMenu();
-  });
+    link.addEventListener('click', () => {
+        closeMenu();
+    });
 });
+
 function storeData() {
     // store user input in object
     const userData = {
-      name: nameInput.value,
-      email: emailInput.value,
-      message: msgInput.value,
-  
+        name: nameInput.value,
+        email: emailInput.value,
+        message: msgInput.value,
+
     };
+    const data = JSON.parse(localStorage.getItem('userData'));
+    // console.log(data);
+    if (data) {
+        nameInput.value = data.name;
+        emailInput.value = data.email;
+        msgInput.value = data.message;
+    }
