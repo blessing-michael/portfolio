@@ -178,7 +178,7 @@ allNavlinks.forEach((link) => {
 
 // FORM VALIDATE
 
-const errorMessage = () => {
+function errorMessage(){
   if (email.value !== email.value.toLowerCase()) {
     error.textContent = 'Please ensure that email address must be in lower case';
   }
