@@ -4,27 +4,32 @@ const closeIcon = document.querySelector('.close-icon');
 const allNavlinks = document.querySelectorAll('.nav-info');
 
 Navicon.addEventListener('click', () => {
-  linksContainer.classList.add('active');
+    linksContainer.classList.add('active');
 });
 
 function closeMenu() {
-  linksContainer.classList.remove('active');
+    linksContainer.classList.remove('active');
 }
 closeIcon.addEventListener('click', () => {
-  closeMenu();
+    closeMenu();
 });
 
 allNavlinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    closeMenu();
-  });
+    link.addEventListener('click', () => {
+        closeMenu();
+    });
 });
-function showMessage(input, message, type) {
-    const msg = input.parentNode.querySelector('small');
-    msg.innerHTML = message;
-  
-    // update input class
-    input.className = type ? 'success' : 'error';
-    return type;
-  }
-  
+const btn = document.getElementById('submit-btn');
+
+btn.addEventListener('click', (event) => {
+            // reject submission of form
+            event.preventDefault();
+
+            function showMessage(input, message, type) {
+                const msg = input.parentNode.querySelector('small');
+                msg.innerHTML = message;
+
+                // update input class
+                input.className = type ? 'success' : 'error';
+                return type;
+            }
