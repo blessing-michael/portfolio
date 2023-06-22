@@ -6,8 +6,9 @@ const details = [
     stack: 'Back End Dev',
     price: 2015,
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    longdescription:`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
     img: './images/work-1.png',
-    technology: ['html', 'css', 'javascript'],
+    technology: ['HTML', 'CSS', 'Javascript'],
     livelink: 'https://blessing-michael.github.io/portfolio/',
     linkSource: 'https://github.com/blessing-michael/portfolio',
   },
@@ -18,8 +19,9 @@ const details = [
     stack: 'Back End Dev',
     price: 2015,
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    longdescription:`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry,`,
     img: './images/work-2.png',
-    technology: ['html', 'css', 'javascript'],
+    technology: ['HTML', 'CSS', 'Javascript'],
     livelink: 'https://blessing-michael.github.io/portfolio/',
     linkSource: 'https://github.com/blessing-michael/portfolio',
   },
@@ -30,20 +32,24 @@ const details = [
     stack: 'Back End Dev',
     price: 2015,
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    longdescription:`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
     img: './images/work-3.png',
-    technology: ['html', 'css', 'javascript'],
+    technology: ['HTML', 'CSS', 'Javascript'],
     livelink: 'https://blessing-michael.github.io/portfolio/',
     linkSource: 'https://github.com/blessing-michael/portfolio',
   },
   {
     id: 4,
-    title: 'Multi-Post Stories',
+    title: 'Multi-Post Stories', 
     platform: 'CANOPY',
     stack: 'Back End Dev',
     price: 2015,
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    img: './images/work-4.png',
-    technology: ['html', 'css', 'javascript'],
+    img: './images/work4.png',
+    featuredimg: '/images/work4.png',
+    
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 
+    longdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.`, 
+    technology: ['HTML', 'CSS', 'Javascript'],
     livelink: 'https://blessing-michael.github.io/portfolio/',
     linkSource: 'https://github.com/blessing-michael/portfolio',
   },
@@ -55,7 +61,7 @@ const closeIcon = document.querySelector('.close-icon');
 const allNavlinks = document.querySelectorAll('.nav-info');
 const workSection = document.querySelectorAll('.work-wrap');
 const popContainer = document.querySelector('.popup-Container');
-// console.log(popContainer)
+console.log(popContainer)
 const workp = document.getElementById('p');
 const worksec = document.getElementById('work');
 
@@ -94,6 +100,79 @@ function generateWork() {
 
 }
 generateWork()
+
+const seeProject = document.querySelectorAll('.tech-project-btn');
+console.log(seeProject)
+seeProject.forEach((button)=>{
+    button.addEventListener('click', (e)=>{
+        console.log(button)
+        if(e.target.classList.contains('tech-project-btn')){
+            popContainer.style.display = 'block';
+            // popContainer.classList.add('popup-Container')
+            const id = parseFloat(e.target.id);
+    const search = details.find((x) => x.id === id);
+    console.log(id)
+    console.log(search)
+
+    if(search){
+        console.log(search.img)
+        console.log(search.title)
+        popContainer.innerHTML= `<div class="pop-up">
+        <div class="popup-info">
+        <i class="fa-solid fa-xmark pop-close"></i>
+          <h5 class="popup-h5">${search.title}</h5>
+          
+          <div class="pop-stack">
+             <div class="pop-stackname">
+              <p class="platform">${search.platform}</p>
+              <p class="pop-counter">  <span class="prof-span">
+              <img src="./images/Counter.png" alt="counter" /></span
+            >${search.stack}</p>
+              <p  class="pop-counter"> <span class="prof-span">
+              <img src="./images/Counter.png" alt="counter" /></span
+            >${search.price}</p>
+             </div>
+            
+            <div class="popup-img">
+              <img src=${search.img} < alt=${search.title} class="popup-image">
+            </div>
+            <div class="popup-description">
+             <div class="popup-p">
+            <p class="popup-pone">${search.longdescription}</p>
+           
+             </div>
+             <div >
+             <div class="popup-techstack">
+             ${search.technology.map((x) => `<p class="popup-pone">${x}</p>`).join('')}
+             
+             </div>
+            <div class="popup-btn">
+            <a href=${search.livelink} class="see-live"
+            ><img src="./images/Enabled1.png" alt="see live" class= "pop-enabled"
+          /></a>
+            <a href=${search.livelink} class="see-live"
+             ><img src="./images/Enabled.png" class= "pop-enabled" alt="see live"
+          /></a>
+                
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+`
+    }
+    const popClose= document.querySelector('.pop-close')
+console.log(popClose)
+popClose.addEventListener('click', ()=>{
+    popContainer.style.display = 'none';
+
+})
+        }
+     
+    })
+    
+})
 
 Navicon.addEventListener('click', () => {
   linksContainer.classList.add('active');
