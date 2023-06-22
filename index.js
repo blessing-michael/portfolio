@@ -19,3 +19,12 @@ allNavlinks.forEach((link) => {
     closeMenu();
   });
 });
+function showMessage(input, message, type) {
+    const msg = input.parentNode.querySelector('small');
+    msg.innerHTML = message;
+  
+    // update input class
+    input.className = type ? 'success' : 'error';
+    return type;
+  }
+  
