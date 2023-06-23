@@ -196,3 +196,29 @@ form.addEventListener('submit', (event) => {
     errorMessage();
   }
 });
+
+// local storage
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const msgInput = document.getElementById('message');
+
+function saveData() {
+  const userData = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: msgInput.value,
+
+  };
+  localStorage.setItem('userData', JSON.stringify(userData));
+}
+nameInput.addEventListener('focusout', saveData);
+emailInput.addEventListener('focusout', saveData);
+msgInput.addEventListener('focusout', saveData);
+
+const data = JSON.parse(localStorage.getItem('userData'));
+
+if (data) {
+  nameInput.value = data.name;
+  emailInput.value = data.email;
+  msgInput.value = data.message;
+}
